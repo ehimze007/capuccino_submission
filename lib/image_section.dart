@@ -5,14 +5,17 @@ class ImageSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10.0),
-        child: Image.asset(
-          'images/Rectangle1706.jpg',
-          width: MediaQuery.of(context).size.width * 1,
-          // height: 100,
-          fit: BoxFit.cover,
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: Center(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10.0),
+          child: Image.asset(
+            'images/Rectangle1706.jpg',
+            width: MediaQuery.of(context).size.width * 1,
+            // height: 100,
+            fit: BoxFit.cover,
+          ),
         ),
       ),
     );
