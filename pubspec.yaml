@@ -66,7 +66,6 @@ flutter:
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
@@ -89,16 +88,6 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  fonts:
-    - family: Sora
-      fonts:
-        - asset: fonts/Sora-Regular.ttf
-        - asset: fonts/Sora-Bold.ttf
-        - asset: fonts/Sora-SemiBold.ttf
-        - asset: fonts/Sora-ExtraLight.ttf
-        - asset: fonts/Sora-ExtraBold.ttf
-        - asset: fonts/Sora-Light.ttf
-        - asset: fonts/Sora-Medium.ttf
-        - asset: fonts/Sora-Thin.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
