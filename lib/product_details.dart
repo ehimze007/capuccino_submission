@@ -14,7 +14,7 @@ class ProductDetailsSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Capuccino',
+            'Cappuccino',
             style: TextStyle(
                 fontFamily: 'Sora', fontSize: 18, fontWeight: FontWeight.w600),
           ),
