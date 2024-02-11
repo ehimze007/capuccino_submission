@@ -16,10 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Capuccino App',
-      theme: ThemeData(
-          // primarySwatch: Colors.blue,
-          ),
+      title: 'My Cappuccino App',
+      theme: ThemeData(),
       debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
@@ -37,27 +35,55 @@ class MyHomePage extends StatelessWidget {
         onBackTap: () {},
         onFavoriteTap: () {},
       ),
-      body: const SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 32),
-          child: Column(
-            children: [
-              SizedBox(height: 72),
-              ImageSection(),
-              SizedBox(height: 16),
-              ProductDetailsSection(),
-              SizedBox(height: 16),
-              ProductDescriptionSection(),
-              SizedBox(height: 16),
-              BuyNowSection(),
-            ],
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: SizedBox(height: 72),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: ImageSection(),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: SizedBox(height: 16),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: ProductDetailsSection(),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: SizedBox(height: 16),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: ProductDescriptionSection(),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: SizedBox(height: 16),
+            ),
+            Container(
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              margin: const EdgeInsets.symmetric(horizontal: 0),
+              child: const Padding(
+                padding: EdgeInsets.all(32.0),
+                child: BuyNowSection(),
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 }
-
 
 
 
