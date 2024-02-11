@@ -26,7 +26,7 @@ class ProductDetailsSection extends StatelessWidget {
                 fontSize: 16,
                 fontWeight: FontWeight.w300),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 2),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
